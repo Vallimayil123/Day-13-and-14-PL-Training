@@ -4,9 +4,15 @@ import Compute from './compute.js';
 import {Greeting}  from './component.js';
 import App1 from './App1';   // ✅ Import App1 here
 import image from './images/hiImg.jpg'
+import App2 from './myRouting.js';
 import Clock from './clock.js';
 import CounterClock from './ClockWithUseState.js';
 import Effecthook from './useEffect.js';
+import { DependencyArray } from './dependecy.js';
+import { LoginValidation } from './loginPage.js';
+import { Loginhook } from './loginWithUseState.js';
+import { OnchangeEvent } from './changeEvent.js';
+import { SignUp } from './signUpPage.js';
 export const handleImg=()=>{
   document.getElementById("image").src="https://plus.unsplash.com/premium_photo-1687203673190-d39c3719123a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGVsbG98ZW58MHx8MHx8fDA%3D"
 }
@@ -26,8 +32,13 @@ export const App=()=> {
       {/* <Greeting /> */}
       
       {/* <CounterClock /> */}
-      <Effecthook />
-      
+      {/* <Effecthook /> */}
+      {/* <DependencyArray /> */}
+      {/* <LoginValidation /> */}
+      {/* <OnchangeEvent /> */}
+      {/* <Loginhook /> */}
+      {/* <SignUp /> */}
+      <App2 />
       </center>
     </div>
   );
